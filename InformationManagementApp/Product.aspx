@@ -1,37 +1,34 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="InformationManagementApp.Product" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="col-md-6 studentForm">
-            <h3>Student Information System</h3>
+    <div class="row">
+        <div class="col-md-6 productForm">
+            <h3>Product Information System</h3>
             <form>
                 <div class="form-group">
-                    <label for="inputStudentName">Student Name</label>
-                    <input type="text" class="form-control" id="inputStudentName" runat="server" autocomplete="off" placeholder="Your Name" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="inputStudentName" Display="Dynamic" ForeColor="Red" ErrorMessage="Name can not be empty"></asp:RequiredFieldValidator>
+                    <label for="inputProductName" runat="server">Product Name</label>
+                    <input type="text" class="form-control" id="inputProductName" runat="server" autocomplete="off" placeholder="Product Name" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="inputProductName" Display="Dynamic" ForeColor="Red" ErrorMessage="Name can not be empty"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
-                    <label for="inputStudentAge">Age</label>
-                    <input type="text" class="form-control" autocomplete="off" runat="server" id="inputStudentAge" placeholder="Your Age" />
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="inputStudentAge" Operator="DataTypeCheck" Type="Integer" Display="Dynamic" ForeColor="Red" ErrorMessage="Invalid Input"></asp:CompareValidator>
+                    <label for="inputProductCode">Product Code</label>
+                    <input type="text" class="form-control" autocomplete="off" runat="server" id="inputProductCode" placeholder="Product Code" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="inputProductCode" Display="Dynamic" ForeColor="Red" ErrorMessage="Product Code can not be empty"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
-                    <label for="inputStudentRegNo">Registration Number</label>
-                    <input type="text" class="form-control" id="inputStudentRegNo" autocomplete="off" runat="server" placeholder="Registration" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="inputStudentRegNo" Display="Dynamic" ForeColor="Red" ErrorMessage="Registration number can not be empty"></asp:RequiredFieldValidator>
+                    <label for="inputProductPrice">Product Price</label>
+                    <input type="text" class="form-control" id="inputProductPrice" autocomplete="off" runat="server" placeholder="Price" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="inputProductPrice" Display="Dynamic" ForeColor="Red" ErrorMessage="Price can not be empty"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
-                    <label for="inputStudentMobileNo">Mobile Number</label>
-                    <input type="text" class="form-control" id="inputStudentMobileNo" autocomplete="off" runat="server" placeholder="01XXXXXXXXX" />
+                    <label for="inputProductMfgDate">Manufacturing Date</label>
+                    <input type="text" class="form-control" id="inputProductMfgDate" autocomplete="off" runat="server" placeholder="YYYY-MM-DD" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="inputProductMfgDate" Display="Dynamic" ForeColor="Red" ErrorMessage="Date can not be empty"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
-                    <label for="inputStudentEmail">Email Address</label>
-                    <input type="text" class="form-control" id="inputStudentEmail" autocomplete="off" runat="server" placeholder="abc@abc.com" />
-                </div>
-                <div class="form-group">
-                    <label for="inputStudentAddress">Address</label>
-                    <input type="text" class="form-control" id="inputStudentAddress" autocomplete="off" runat="server" placeholder="Dhaka, Bangladesh" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="inputStudentAddress" Display="Dynamic" ForeColor="Red" ErrorMessage="Address can not be empty"></asp:RequiredFieldValidator>
+                    <label for="inputProductExpDate">Expiry Date</label>
+                    <input type="text" class="form-control" id="inputProductExpDate" autocomplete="off" runat="server" placeholder="YYYY-MM-DD" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="inputProductExpDate" Display="Dynamic" ForeColor="Red" ErrorMessage="Date can not be empty"></asp:RequiredFieldValidator>
                 </div>
                 <br />
                 <asp:Button ID="saveButton" class="btn btn-info" runat="server" Text="Save" OnClick="saveButton_Click" />
@@ -42,48 +39,43 @@
 
         <br />
 
-        <div class="col-md-6 studentGridView">
-            <asp:GridView ID="studedntListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None">
-                <AlternatingRowStyle BackColor="White" />
-                <EditRowStyle BackColor="#7C6F57" />
-                <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#E3EAEB" />
-                <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
-                <SortedAscendingCellStyle BackColor="#F8FAFA" />
-                <SortedAscendingHeaderStyle BackColor="#246B61" />
-                <SortedDescendingCellStyle BackColor="#D4DFE1" />
-                <SortedDescendingHeaderStyle BackColor="#15524A" />
+        <div class="col-md-6 productGridView">
+            <asp:GridView ID="productListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                <EditRowStyle BackColor="#999999" />
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 <Columns>
                     <asp:TemplateField HeaderText="Name">
                         <ItemTemplate>
-                            <%#Eval("StudentName") %>
+                            <%#Eval("ProductName") %>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Age">
+                    <asp:TemplateField HeaderText="Code">
                         <ItemTemplate>
-                            <%#Eval("StudentAge") %>
+                            <%#Eval("ProductCode") %>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Registration No">
+                    <asp:TemplateField HeaderText="Price">
                         <ItemTemplate>
-                            <%#Eval("StudentRegNo") %>
+                            <%#Eval("ProductPrice") %>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Mobile">
+                    <asp:TemplateField HeaderText="Mfg Date">
                         <ItemTemplate>
-                            <%#Eval(@"StudentMobileNo") %>
+                            <%#Eval(@"ProductMfgDate") %>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Email">
+                    <asp:TemplateField HeaderText="Exp Date">
                         <ItemTemplate>
-                            <%#Eval("StudentEmail") %>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Address">
-                        <ItemTemplate>
-                            <%#Eval("StudentAddress") %>
+                            <%#Eval("ProductExpDate") %>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

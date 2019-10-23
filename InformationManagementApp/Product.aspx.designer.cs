@@ -13,13 +13,13 @@ namespace InformationManagementApp {
     public partial class Product {
         
         /// <summary>
-        /// inputStudentName control.
+        /// inputProductName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductName;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -31,31 +31,31 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// inputStudentAge control.
+        /// inputProductCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentAge;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductCode;
         
         /// <summary>
-        /// CompareValidator1 control.
+        /// RequiredFieldValidator4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// inputStudentRegNo control.
+        /// inputProductPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentRegNo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductPrice;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -67,40 +67,40 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// inputStudentMobileNo control.
+        /// inputProductMfgDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentMobileNo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductMfgDate;
         
         /// <summary>
-        /// inputStudentEmail control.
+        /// RequiredFieldValidator5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
         
         /// <summary>
-        /// inputStudentAddress control.
+        /// inputProductExpDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputStudentAddress;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductExpDate;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RequiredFieldValidator6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
         
         /// <summary>
         /// saveButton control.
@@ -121,12 +121,12 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.Label msgLabel;
         
         /// <summary>
-        /// studedntListGridView control.
+        /// productListGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView studedntListGridView;
+        protected global::System.Web.UI.WebControls.GridView productListGridView;
     }
 }
