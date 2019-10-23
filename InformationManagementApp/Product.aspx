@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="InformationManagementApp.Product" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="col-md-6 studentForm">
+    <div class="row">
+        <div class="col-md-6 studentForm">
             <h3>Student Information System</h3>
             <form>
                 <div class="form-group">
