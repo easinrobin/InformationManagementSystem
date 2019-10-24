@@ -13,10 +13,5 @@ namespace InformationManagementApp
         {
 
         }
-
-        protected void saveButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
