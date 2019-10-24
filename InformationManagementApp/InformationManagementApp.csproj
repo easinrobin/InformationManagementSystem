@@ -172,6 +172,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\EmployeeClass.cs" />
+    <Compile Include="Models\ProductClass.cs" />
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

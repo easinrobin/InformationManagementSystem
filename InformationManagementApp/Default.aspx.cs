@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Web.Configuration;
 using System.Web.UI;
 using InformationManagementApp.Models;
 
@@ -25,7 +26,7 @@ namespace InformationManagementApp
 
             Student student = new Student(name, age, regNo, mobileNo, email, address);
 
-            string connectionString = @"Server = LAPTOP-GSAHG1KQ; Database = InformationManagementDB; Integrated Security = true; ";
+            string connectionString = WebConfigurationManager.ConnectionStrings["IMDB"].ConnectionString;
 
             var rowEffect = InsertStudentInfo(connectionString, student);
 
