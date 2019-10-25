@@ -10,7 +10,7 @@ namespace InformationManagementApp
 {
     public partial class Product : Page
     {
-        readonly string connectionString = WebConfigurationManager.ConnectionStrings["IMDB"].ConnectionString;
+        string connectionString = WebConfigurationManager.ConnectionStrings["IMDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
