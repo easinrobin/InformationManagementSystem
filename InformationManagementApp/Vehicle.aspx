@@ -39,7 +39,7 @@
         <br/>
         
         <div class="col-md-8 vehicleGridView">
-            <asp:GridView ID="vehicleListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4">
+            <asp:GridView ID="vehicleListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4" Width="520px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
