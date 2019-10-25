@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
-        <div class="col-md-6 employeeForm">
+        <div class="col-md-4 employeeForm">
             <h3>Employee Information System</h3>
             <form>
                 <div class="form-group">
@@ -48,8 +48,8 @@
         
         <br/>
 
-        <div class="col-md-6">
-            <asp:GridView ID="employeeGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <div class="col-md-8">
+            <asp:GridView ID="employeeGridView" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="481px">
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

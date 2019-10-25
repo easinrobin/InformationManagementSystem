@@ -7,10 +7,13 @@
         }
         .studentForm {
         }
+        .auto-style1 {
+            margin-right: 0px;
+        }
     </style>
 
     <div class="row">
-        <div class="col-md-6 studentForm">
+        <div class="col-md-4 studentForm">
             <h3>Student Information System</h3>
             <form>
                 <div class="form-group">
@@ -50,8 +53,8 @@
 
         <br />
 
-        <div class="col-md-6 studentGridView">
-            <asp:GridView ID="studedntListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None">
+        <div class="col-md-8 studentGridView">
+            <asp:GridView ID="studedntListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CssClass="auto-style1" Width="577px">
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#7C6F57" />
                 <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
