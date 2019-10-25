@@ -23,7 +23,7 @@
     </script>
 
     <div class="row">
-        <div class="col-md-6 productForm">
+        <div class="col-md-4 productForm">
             <h3>Product Information System</h3>
             <form>
                 <div class="form-group">
@@ -60,8 +60,8 @@
 
         <br />
 
-        <div class="col-md-6 productGridView">
-            <asp:GridView ID="productListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4">
+        <div class="col-md-8 productGridView">
+            <asp:GridView ID="productListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4" Width="530px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

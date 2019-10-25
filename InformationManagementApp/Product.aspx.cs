@@ -12,6 +12,7 @@ namespace InformationManagementApp
     {
         string connectionString = WebConfigurationManager.ConnectionStrings["IMDB"].ConnectionString;
 
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ShowAllProducts();
