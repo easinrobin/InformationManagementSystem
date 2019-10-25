@@ -13,13 +13,13 @@ namespace InformationManagementApp {
     public partial class Vehicle {
         
         /// <summary>
-        /// inputProductName control.
+        /// inputVehicleType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputVehicleType;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -31,13 +31,13 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// inputProductCode control.
+        /// inputVehicleCompany control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductCode;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputVehicleCompany;
         
         /// <summary>
         /// RequiredFieldValidator4 control.
@@ -49,13 +49,13 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// inputProductPrice control.
+        /// inputVehicleReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputVehicleReg;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -67,13 +67,13 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// inputProductMfgDate control.
+        /// inputVehicleModel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductMfgDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputVehicleModel;
         
         /// <summary>
         /// RequiredFieldValidator5 control.
@@ -85,13 +85,13 @@ namespace InformationManagementApp {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
         
         /// <summary>
-        /// inputProductExpDate control.
+        /// inputVehicleDealer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText inputProductExpDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputVehicleDealer;
         
         /// <summary>
         /// RequiredFieldValidator6 control.
@@ -119,5 +119,14 @@ namespace InformationManagementApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label msgLabel;
+        
+        /// <summary>
+        /// vehicleListGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView vehicleListGridView;
     }
 }

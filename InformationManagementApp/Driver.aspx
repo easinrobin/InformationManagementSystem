@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="row">
-        <div class="col-md-6 productForm">
+        <div class="col-md-4 productForm">
             <h3>Driver Information System</h3>
             <form>
                 <div class="form-group">
@@ -43,7 +43,7 @@
         
         <br/>
 
-        <div class="col-md-6 driverGridView">
+        <div class="col-md-8 driverGridView">
             <asp:GridView ID="driverListGridView" runat="server" AutoGenerateColumns="False" ForeColor="#333333" GridLines="None" CellPadding="4" Width="551px">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <EditRowStyle BackColor="#999999" />
